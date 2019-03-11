@@ -67,6 +67,10 @@
                     name="coupon"
                     ng-model="ctrl.coupon"
                     required="required" />
+                <div ng-messages="form.coupon.$errors">
+                  <div ng-message="correct">Coupon code format incorrect!
+                  </div>
+                </div>
             <span class="coupon">{{ ctrl.coupon }}</span>
         </form>
     </div>
